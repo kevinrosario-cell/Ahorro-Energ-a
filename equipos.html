@@ -1,0 +1,155 @@
+﻿<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mis Equipos - Ahorra Energía</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">⚡ Ahorra Energía</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link active" href="equipos.html">Mis equipos</a></li>
+            <li class="nav-item"><a class="nav-link" href="mi-factura.html">Mi factura</a></li>
+            <li class="nav-item"><a class="nav-link" href="encuesta.html">Encuesta</a></li>
+            <li class="nav-item"><a class="nav-link" href="registro.html">Registrar equipo</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container py-5">
+      <main>
+        <h1 class="mb-4">Mis equipos eléctricos</h1>
+        
+        <div class="alert alert-info alert-dismissible fade show" role="alert">
+          <strong>ℹ️ Información:</strong> A continuación se detalla el consumo semanal de cada equipo con tarifa de 533 COP/kWh registrada en agosto de 2026.
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+
+        <div class="table-responsive">
+          <table class="table table-striped table-hover table-bordered">
+            <caption class="caption-top mb-3">Consumo estimado semanal por equipo (Lunes a Domingo)</caption>
+            <thead class="table-success">
+              <tr>
+                <th>Equipo</th>
+                <th>Potencia (W)</th>
+                <th>Horas/Semana</th>
+                <th>Consumo (kWh)</th>
+                <th>Costo semanal</th>
+                <th rowspan="2" class="align-middle">Categoría</th>
+              </tr>
+              <tr>
+                <th colspan="5" class="text-center bg-warning">Detalles de consumo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Nevera</strong></td>
+                <td>400</td>
+                <td>53.1</td>
+                <td>21.24</td>
+                <td>$11,321</td>
+                <td>Electrodoméstico</td>
+              </tr>
+              <tr>
+                <td><strong>Lavadora</strong></td>
+                <td>2200</td>
+                <td>1.26</td>
+                <td>2.78</td>
+                <td>$1,483</td>
+                <td>Electrodoméstico</td>
+              </tr>
+              <tr>
+                <td><strong>Licuadora</strong></td>
+                <td>600</td>
+                <td>0.63</td>
+                <td>0.38</td>
+                <td>$202</td>
+                <td>Cocina</td>
+              </tr>
+              <tr>
+                <td><strong>Olla Multifuncional</strong></td>
+                <td>1000</td>
+                <td>0.95</td>
+                <td>0.95</td>
+                <td>$505</td>
+                <td>Cocina</td>
+              </tr>
+              <tr class="table-active fw-bold">
+                <td colspan="3">TOTALES SEMANALES:</td>
+                <td>25.35</td>
+                <td>$13,511</td>
+                <td>-</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr class="table-light">
+                <td colspan="3" class="text-end"><strong>Proyección mensual (4.3 semanas):</strong></td>
+                <td><strong>109 kWh</strong></td>
+                <td><strong>$58,100</strong></td>
+                <td>-</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+
+        <h2 class="mt-5 mb-4">Fotos de las etiquetas de los equipos</h2>
+        
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <figure class="figure">
+              <img src="img/nevera.jpeg" class="figure-img img-fluid rounded shadow" alt="Etiqueta de potencia de la nevera mostrando 400W">
+              <figcaption class="figure-caption text-center">Nevera - Potencia: 400W. Equipo de alto consumo continuo.</figcaption>
+            </figure>
+          </div>
+          <div class="col-md-6 mb-4">
+            <figure class="figure">
+              <img src="img/lavadora.jpeg" class="figure-img img-fluid rounded shadow" alt="Etiqueta de potencia de la lavadora mostrando 2200W">
+              <figcaption class="figure-caption text-center">Lavadora - Potencia: 2200W. Máximo consumo entre los equipos.</figcaption>
+            </figure>
+          </div>
+          <div class="col-md-6 mb-4">
+            <figure class="figure">
+              <img src="img/licuadora.jpeg" class="figure-img img-fluid rounded shadow" alt="Etiqueta de potencia de la licuadora mostrando 600W">
+              <figcaption class="figure-caption text-center">Licuadora - Potencia: 600W. Uso ocasional.</figcaption>
+            </figure>
+          </div>
+          <div class="col-md-6 mb-4">
+            <figure class="figure">
+              <img src="img/olla multifuncional.jpeg" class="figure-img img-fluid rounded shadow" alt="Etiqueta de potencia de la olla multifuncional mostrando 1000W">
+              <figcaption class="figure-caption text-center">Olla Multifuncional - Potencia: 1000W. Cocción eficiente.</figcaption>
+            </figure>
+          </div>
+          <div class="col-md-6 mb-4">
+            <figure class="figure">
+              <img src="img/factura energia.jpeg" class="figure-img img-fluid rounded shadow" alt="Factura de energía del hogar">
+              <figcaption class="figure-caption text-center">Factura de Energía - Tarifa: 942 COP/kWh (Agosto 2026).</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="alert alert-success mt-5" role="alert">
+          <h4 class="alert-heading">💡 Análisis de consumo</h4>
+          <p>La nevera es el equipo de mayor consumo por su funcionamiento continuo (168 horas/semana). La lavadora consume más potencia pero con uso limitado. Optimizar estos equipos podría reducir la factura mensual en un 25-30%.</p>
+        </div>
+      </main>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+      <p class="mb-0">Ingeniería Web I · IU Digital de Antioquia · 2026-2</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

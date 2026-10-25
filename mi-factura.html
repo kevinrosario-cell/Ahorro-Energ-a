@@ -1,0 +1,240 @@
+﻿<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Factura - Ahorra Energía</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">⚡ Ahorra Energía</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="equipos.html">Mis equipos</a></li>
+            <li class="nav-item"><a class="nav-link active" href="mi-factura.html">Mi factura</a></li>
+            <li class="nav-item"><a class="nav-link" href="encuesta.html">Encuesta</a></li>
+            <li class="nav-item"><a class="nav-link" href="registro.html">Registrar equipo</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container py-5">
+      <main>
+        <h1 class="mb-4">Mi factura de energía</h1>
+        
+        <div class="row mb-4">
+          <div class="col-md-8">
+            <div class="card border-0 shadow">
+              <div class="card-header bg-success text-white">
+                <h5 class="mb-0">📄 Factura de Energía - Agosto 2026</h5>
+              </div>
+              <div class="card-body">
+                <img src="img/factura energia.jpeg" class="img-fluid rounded" alt="Factura de energía del hogar con detalles de consumo y tarifa">
+                <p class="text-muted mt-3"><small>Factura presentada con datos de consumo y tarifa actual de 942 COP/kWh.</small></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-left border-success border-5 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">📊 Datos de la factura</h5>
+                <ul class="list-unstyled">
+                  <li><strong>Mes:</strong> Agosto 2026</li>
+                  <li><strong>Consumo:</strong> 109 kWh</li>
+                  <li><strong>Tarifa:</strong> 533 COP/kWh</li>
+                  <li><strong>Total pagado:</strong> $58,095</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="mt-5 mb-3">Historial de consumo - Últimos 12 meses</h2>
+        
+        <div class="table-responsive">
+          <table class="table table-striped table-hover table-bordered">
+            <caption class="caption-top mb-3">Evolución del consumo y costo mensual</caption>
+            <thead class="table-success">
+              <tr>
+                <th>Mes</th>
+                <th>Consumo (kWh)</th>
+                <th>Tarifa (COP/kWh)</th>
+                <th>Costo pagado ($)</th>
+                <th>Variación %</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Enero 2026</td>
+                <td>98</td>
+                <td>212</td>
+                <td>$20,776</td>
+                <td class="text-success">-</td>
+              </tr>
+              <tr>
+                <td>Febrero 2026</td>
+                <td>95</td>
+                <td>124</td>
+                <td>$11,780</td>
+                <td class="text-success">-43%</td>
+              </tr>
+              <tr>
+                <td>Marzo 2026</td>
+                <td>100</td>
+                <td>220</td>
+                <td>$22,000</td>
+                <td class="text-danger">+86%</td>
+              </tr>
+              <tr>
+                <td>Abril 2026</td>
+                <td>105</td>
+                <td>269</td>
+                <td>$28,245</td>
+                <td class="text-danger">+28%</td>
+              </tr>
+              <tr>
+                <td>Mayo 2026</td>
+                <td>110</td>
+                <td>505</td>
+                <td>$55,550</td>
+                <td class="text-danger">+96%</td>
+              </tr>
+              <tr>
+                <td>Junio 2026</td>
+                <td>112</td>
+                <td>546</td>
+                <td>$61,152</td>
+                <td class="text-danger">+11%</td>
+              </tr>
+              <tr>
+                <td>Julio 2026</td>
+                <td>115</td>
+                <td>790</td>
+                <td>$90,850</td>
+                <td class="text-danger">+49%</td>
+              </tr>
+              <tr class="table-warning fw-bold">
+                <td>Agosto 2026</td>
+                <td>109</td>
+                <td>533</td>
+                <td>$58,095</td>
+                <td class="text-danger">+22%</td>
+              </tr>
+              <tr>
+                <td>Septiembre 2026</td>
+                <td>108</td>
+                <td>420</td>
+                <td>$45,360</td>
+                <td class="text-success">-31%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <section class="mt-5 mb-5">
+          <h2 class="mb-4">Comparativa: Proyección vs. Factura Real</h2>
+          
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card mb-3 border-0 shadow-sm">
+                <div class="card-header bg-info text-white">
+                  <h5 class="mb-0">📈 Proyección calculada</h5>
+                </div>
+                <div class="card-body">
+                  <p><strong>Consumo calculado (5 equipos):</strong></p>
+                  <ul>
+                    <li>Consumo semanal: 92.75 kWh</li>
+                    <li>Proyección mensual: 398.83 kWh</li>
+                    <li>Costo estimado: $375,688</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card mb-3 border-0 shadow-sm">
+                <div class="card-header bg-warning text-dark">
+                  <h5 class="mb-0">📊 Consumo real facturado</h5>
+                </div>
+                <div class="card-body">
+                  <p><strong>Datos de factura (Agosto 2026):</strong></p>
+                  <ul>
+                    <li>Consumo real: 109 kWh</li>
+                    <li>Costo real: $58,095</li>
+                    <li>Diferencia: -289.83 kWh (-72.8%)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="alert alert-primary" role="alert">
+            <h4 class="alert-heading">🔍 Análisis de la diferencia</h4>
+            <p>La proyección calculada (398.83 kWh) es considerablemente superior al consumo real facturado (109 kWh), con una diferencia de 289.83 kWh (-72.8%). Esta gran diferencia puede deberse a:</p>
+            <ul class="mb-0">
+              <li><strong>Uso parcial de equipos:</strong> Es posible que no todos los equipos calculados se utilicen regularmente o con las horas estimadas inicialmente.</li>
+              <li><strong>Equipos más eficientes:</strong> Los equipos reales pueden ser más nuevos o eficientes de lo proyectado, consumiendo menos energía.</li>
+              <li><strong>Hábitos de consumo optimizado:</strong> La familia podría estar optimizando su consumo más de lo esperado, limitando el uso de electrodomésticos de alto consumo.</li>
+              <li><strong>Tarifa diferente:</strong> La tarifa real (533 COP/kWh) es significativamente menor a la estimada (942 COP/kWh), lo que se refleja en un costo menor.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="mb-5">
+          <h2 class="mb-4">💡 Recomendaciones de ahorro para la familia</h2>
+          
+          <div class="row">
+            <div class="col-md-4 mb-3">
+              <div class="card h-100 border-success border-3">
+                <div class="card-body">
+                  <h5 class="card-title">1. Optimizar la nevera</h5>
+                  <p class="card-text">La nevera consume aproximadamente el 17% de la energía total. Limpiar los serpentines regularmente puede reducir su consumo en 10-15%.</p>
+                  <p class="text-success fw-bold">Ahorro potencial: ~$1,000/mes</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div class="card h-100 border-success border-3">
+                <div class="card-body">
+                  <h5 class="card-title">2. Uso eficiente de lavadora</h5>
+                  <p class="card-text">Usar la lavadora solo con cargas completas puede reducir el costo en 5-8%. Aprovecha las horas de menor demanda.</p>
+                  <p class="text-success fw-bold">Ahorro potencial: ~$350/mes</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div class="card h-100 border-success border-3">
+                <div class="card-body">
+                  <h5 class="card-title">3. Hábitos de consumo</h5>
+                  <p class="card-text">Desconectar equipos en stand-by y reducir tiempo de ducha eléctrica puede ahorrar 5-10% del consumo mensual.</p>
+                  <p class="text-success fw-bold">Ahorro potencial: ~$400/mes</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="alert alert-success mt-4" role="alert">
+            <strong>✅ Potencial total de ahorro:</strong> Con estas tres estrategias, la familia podría ahorrar aproximadamente <strong>$1,750 mensuales</strong>, lo que equivale a un 3-5% de reducción adicional en la factura de energía.
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+      <p class="mb-0">Ingeniería Web I · IU Digital de Antioquia · 2026-2</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+
+

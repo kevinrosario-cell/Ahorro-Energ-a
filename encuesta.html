@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
@@ -71,12 +71,12 @@
 
                 <div class="mb-4">
                   <label for="duchadiaria" class="form-label">¿Cuántas duchas eléctricas diarias toma el hogar? <span class="text-danger">*</span></label>
-                  <input type="range" class="form-range" id="duchadiaria" name="duchadiaria" min="0" max="10" value="5" required>
+                  <input type="range" class="form-range" id="duchadiaria" name="duchadiaria" min="0" max="10" value="5">
                   <small class="form-text text-muted d-block">Valor actual: <span id="duchaval">5</span> duchas</small>
                 </div>
 
                 <div class="mb-3">
-                  <label for="refrigeracion" class="form-label">¿Tienes aire acondicionado funcionando? <span class="text-danger">*</span></label>
+                  <label class="form-label">¿Tienes aire acondicionado funcionando? <span class="text-danger">*</span></label>
                   <div class="form-check">
                     <input class="form-check-input" type="radio" name="refrigeracion" id="ac_si" value="si" required>
                     <label class="form-check-label" for="ac_si">Sí, funciona todo el día</label>
@@ -92,7 +92,7 @@
                 </div>
 
                 <div class="mb-3">
-                  <label for="aparatos" class="form-label">¿Cuáles equipos eléctricos están frecuentemente encendidos? <span class="text-danger">*</span></label>
+                  <label class="form-label">¿Cuáles equipos eléctricos están frecuentemente encendidos? <span class="text-danger">*</span></label>
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" id="tv" name="aparatos" value="tv">
                     <label class="form-check-label" for="tv">Televisor</label>
@@ -146,7 +146,7 @@
 
                 <div class="mb-3">
                   <label for="importancia" class="form-label">¿Qué tan importante es para ti ahorrar energía? <span class="text-danger">*</span></label>
-                  <input type="range" class="form-range" id="importancia" name="importancia" min="1" max="5" value="3" required>
+                  <input type="range" class="form-range" id="importancia" name="importancia" min="1" max="5" value="3">
                   <div class="d-flex justify-content-between">
                     <small>Nada importante</small>
                     <small id="impval" class="fw-bold">Neutral</small>
